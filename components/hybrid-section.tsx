@@ -1,20 +1,22 @@
 import { Card } from "@/components/ui/card"
 import { CreditCard, Tag, Sparkles } from "lucide-react"
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const features = [
   {
     icon: CreditCard,
     title: "Wizytówki Hybrydowe (NFC)",
     description:
       "Zrób wrażenie, które trwa. Projektujemy eleganckie, fizyczne wizytówki i tagi z wbudowanym chipem NFC. Jedno zbliżenie telefonu klienta natychmiast przenosi go do Twojego portfolio, kontaktu lub oferty.",
-    image: "/modern-nfc-business-card-hovering-over-smartphone-.jpg",
+    image: `${basePath}/modern-nfc-business-card-hovering-over-smartphone-.jpg`,
   },
   {
     icon: Tag,
     title: "Interaktywne Promocje",
     description:
       "Materiały promocyjne i kody rabatowe, które żyją. Łączymy fizyczny design z cyfrowym śledzeniem skuteczności kampanii.",
-    image: "/digital-promotional-discount-coupon-on-screen-mode.jpg",
+    image: `${basePath}/digital-promotional-discount-coupon-on-screen-mode.jpg`,
   },
 ]
 
@@ -79,7 +81,7 @@ export function HybridSection() {
                     } z-10`}
                   />
                   <img
-                    src={feature.image || "/placeholder.svg"}
+                    src={feature.image || `${basePath}/placeholder.svg`}
                     alt={feature.title}
                     className="w-full h-full object-cover"
                   />

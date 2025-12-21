@@ -58,7 +58,7 @@ export function HeroSection() {
             <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-2xl">
               <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent rounded-2xl z-10" />
               <img
-                src="/abstract-digital-technology-network-connected-to-h.jpg"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/abstract-digital-technology-network-connected-to-h.jpg`}
                 alt="Wizualizacja technologii cyfrowej"
                 className="rounded-2xl object-cover w-full h-full shadow-2xl"
               />

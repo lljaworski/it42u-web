@@ -2,6 +2,9 @@
 const nextConfig = {
   output: 'export',
   basePath: '/it42u-web',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: '/it42u-web',
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
