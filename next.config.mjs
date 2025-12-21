@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/it42u-web',
   env: {
-    NEXT_PUBLIC_BASE_PATH: '/it42u-web',
+    NEXT_PUBLIC_BASE_PATH: '',
   },
   typescript: {
     ignoreBuildErrors: true,
