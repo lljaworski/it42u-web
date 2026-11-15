@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Sparkles } from "lucide-react"
+import { Mail, MapPin, Phone } from "lucide-react"
 import { NeuralNetworkBg } from "./neural-network-bg"
+import { CONTACT } from "@/lib/content"
 
 export function HeroSection() {
   return (
@@ -19,35 +20,38 @@ export function HeroSection() {
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
           <div className="space-y-6 md:space-y-8 lg:space-y-10 animate-fade-in-up">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs sm:text-sm font-medium">
-              <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
-              <span className="whitespace-nowrap">IT for to you</span>
+              <MapPin className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+              <span>{CONTACT.region}</span>
             </div>
 
             <div className="space-y-4">
-              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-                <span className="text-primary">IT42U</span>
-                <br />
-                <span className="text-foreground/90">Technologia,</span>
-                <br />
+              <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-balance">
+                <span className="text-foreground/90">AI i automatyzacja dla firm z </span>
                 <span className="bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">
-                  która Cię rozumie
+                  Myszkowa, Zawiercia i okolic
                 </span>
               </h1>
 
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Nie sprzedajemy gotowych pudełek. Tworzymy rozwiązania cyfrowe i hybrydowe skrojone dokładnie na miarę
-                Twoich potrzeb biznesowych.
+                Pomagamy lokalnym firmom oszczędzać czas i mniej pracować ręcznie. Mamy ponad 17 lat doświadczenia w
+                programowaniu, a jako IT42U działamy od 2020 roku. Wytłumaczymy wszystko po ludzku.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <a href="#contact" className="w-full sm:w-auto">
+              <a href={CONTACT.phoneHref} className="w-full sm:w-auto">
                 <Button
                   size="lg"
-                  className="bg-accent text-accent-foreground hover:bg-accent/90 text-base px-6 py-6 sm:px-8 shadow-lg shadow-accent/20 transition-all duration-300 hover:shadow-xl hover:shadow-accent/30 hover:scale-105 group w-full"
+                  className="bg-accent text-accent-foreground hover:bg-accent/90 text-base px-6 py-6 sm:px-8 shadow-lg shadow-accent/20 transition-all duration-300 hover:shadow-xl hover:shadow-accent/30 hover:scale-105 w-full"
                 >
-                  <span className="text-pretty text-center flex-1">Porozmawiajmy o Twoim projekcie</span>
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
+                  <Phone className="mr-2 h-5 w-5 flex-shrink-0" />
+                  Zadzwoń
+                </Button>
+              </a>
+              <a href={`mailto:${CONTACT.email}`} className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="text-base px-6 py-6 sm:px-8 w-full">
+                  <Mail className="mr-2 h-5 w-5 flex-shrink-0" />
+                  Napisz
                 </Button>
               </a>
             </div>
