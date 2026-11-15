@@ -30,3 +30,7 @@ There is no test suite.
 - Component files kebab-case (`hero-section.tsx`), exports PascalCase named exports (`HeroSection`).
 - `@/` path alias for imports; add `"use client"` only when a component needs it.
 - Mobile-first responsive design with `sm:`/`md:`/`lg:`/`xl:` prefixes.
+
+## Site content context
+
+Audience, mission, section structure and content rules (no client names, neutral wording for the casino industry, company voice — not personal) are defined in `docs/superpowers/specs/2026-11-15-strona-firmowa-design.md`. Read it before changing any copy.
