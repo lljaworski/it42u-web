@@ -47,35 +47,35 @@ export const CASE_STUDIES: CaseStudy[] = [
     sector: "Agencja pracy, region śląski",
     problem: "Agencja potrzebowała widocznej obecności w sieci i porządku w organizacji opieki nad osobami starszymi.",
     solution: "Zbudowaliśmy strony internetowe oraz system do zarządzania opieką nad osobami starszymi.",
-    tech: ["PHP"],
+    tech: [],
   },
   {
     title: "Serwisy kulturalne miast",
     sector: "Sektor publiczny",
     problem: "Miasta w Polsce potrzebowały serwisów kulturalnych dla mieszkańców, wybieranych w przetargach publicznych.",
     solution: "Zrealizowaliśmy serwisy kulturalne miast w ramach przetargów publicznych.",
-    tech: ["PHP"],
+    tech: [],
   },
   {
     title: "Platforma B2B dla hurtowni",
     sector: "Hurtownia tuszy i tonerów",
     problem: "Jedna z większych hurtowni tuszy i tonerów potrzebowała wygodnych zamówień dla firm.",
     solution: "Stworzyliśmy platformę B2B, przez którą firmy kupują online.",
-    tech: ["PHP"],
+    tech: [],
   },
   {
     title: "Jedna z pierwszych aplikacji medycznych online",
     sector: "Medycyna",
     problem: "Usługi medyczne dopiero zaczynały przenosić się do przeglądarki.",
     solution: "Zbudowaliśmy jedną z pierwszych w Polsce przeglądarkowych aplikacji medycznych.",
-    tech: ["Java"],
+    tech: [],
   },
   {
     title: "Rozwój platformy afiliacyjnej",
     sector: "Platformy rozrywki online",
     problem: "Platforma afiliacyjna branży rozrywki online musiała stale rosnąć i zmieniać się wraz z rynkiem.",
     solution: "Przez wiele lat rozwijaliśmy platformę, dodając nowe funkcje i dbając o jej stabilność.",
-    tech: ["PHP", "Java"],
+    tech: [],
   },
   {
     title: "Utrzymanie klienta i AI na dużą skalę",
@@ -83,7 +83,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     problem: "Duże platformy rozrywki online potrzebują systemów, które utrzymują klienta i obsługują go sprawnie.",
     solution:
       "Obecnie tworzymy systemy utrzymania klienta: silnik bonusów, komunikację i CRM. Wdrażamy też rozwiązania AI, które automatyzują procesy i poprawiają doświadczenie klienta.",
-    tech: ["Java", "Python", "Agenci AI"],
+    tech: [],
   },
 ]
 
