@@ -1,7 +1,6 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
 import { CoreServices } from "@/components/core-services"
-import { HybridSection } from "@/components/hybrid-section"
 import { Footer } from "@/components/footer"
 
 export default function Page() {
@@ -11,7 +10,6 @@ export default function Page() {
       <main>
         <HeroSection />
         <CoreServices />
-        <HybridSection />
       </main>
       <Footer />
     </div>

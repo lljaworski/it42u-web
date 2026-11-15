@@ -7,10 +7,9 @@ const inter = Inter({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "IT42U – Technologia, która Cię rozumie",
+  title: "IT42U – AI i automatyzacja dla firm z Myszkowa i Zawiercia",
   description:
-    "Tworzymy rozwiązania cyfrowe i hybrydowe skrojone dokładnie na miarę Twoich potrzeb biznesowych. Dedykowane oprogramowanie, automatyzacja i AI.",
-  generator: "v0.app",
+    "Pomagamy lokalnym firmom z Myszkowa, Zawiercia i okolic wdrażać automatyzację, agentów AI i oprogramowanie na miarę. Ponad 17 lat doświadczenia.",
   icons: {
     icon: [
       {
