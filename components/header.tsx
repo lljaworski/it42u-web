@@ -28,16 +28,17 @@ export function Header() {
           ))}
         </nav>
 
-        <a href={CONTACT.phoneHref} className="group">
-          <Button
-            size="lg"
-            className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg shadow-accent/20 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-accent/30 gap-2 text-base md:text-lg font-semibold px-6 py-6"
-          >
+        <Button
+          asChild
+          size="lg"
+          className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg shadow-accent/20 transition-all duration-300 hover:shadow-xl hover:shadow-accent/30 gap-2 text-base md:text-lg font-semibold px-6 py-6"
+        >
+          <a href={CONTACT.phoneHref}>
             <Phone className="h-5 w-5" />
             <span className="hidden sm:inline">{CONTACT.phone}</span>
             <span className="sm:hidden">Zadzwoń</span>
-          </Button>
-        </a>
+          </a>
+        </Button>
       </div>
     </header>
   )

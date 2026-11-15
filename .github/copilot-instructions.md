@@ -1,15 +1,15 @@
 # IT42U Web Project - Copilot Instructions
 
 ## Project Overview
-This is a Next.js 14+ landing page for IT42U, a Polish technology company. The site is in Polish language.
+This is a Next.js 16 landing page for IT42U, a Polish technology company. The site is in Polish language.
 
 ## Tech Stack
-- **Framework**: Next.js 14+ with App Router
+- **Framework**: Next.js 16 with App Router
 - **Language**: TypeScript (strict mode)
 - **Styling**: Tailwind CSS v4 with CSS custom properties (oklch color space)
 - **UI Library**: Custom components following shadcn/ui patterns
 - **Package Manager**: pnpm
-- **Deployment**: Vercel (auto-synced with v0.app)
+- **Deployment**: GitHub Pages via `.github/workflows/deploy.yml` (static export)
 
 ## Code Style Guidelines
 

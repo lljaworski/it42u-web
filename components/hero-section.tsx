@@ -39,21 +39,22 @@ export function HeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <a href={CONTACT.phoneHref} className="w-full sm:w-auto">
-                <Button
-                  size="lg"
-                  className="bg-accent text-accent-foreground hover:bg-accent/90 text-base px-6 py-6 sm:px-8 shadow-lg shadow-accent/20 transition-all duration-300 hover:shadow-xl hover:shadow-accent/30 hover:scale-105 w-full"
-                >
+              <Button
+                asChild
+                size="lg"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 text-base px-6 py-6 sm:px-8 shadow-lg shadow-accent/20 transition-all duration-300 hover:shadow-xl hover:shadow-accent/30 hover:scale-105 w-full sm:w-auto"
+              >
+                <a href={CONTACT.phoneHref}>
                   <Phone className="mr-2 h-5 w-5 flex-shrink-0" />
                   Zadzwoń
-                </Button>
-              </a>
-              <a href={`mailto:${CONTACT.email}`} className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="text-base px-6 py-6 sm:px-8 w-full">
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="text-base px-6 py-6 sm:px-8 w-full sm:w-auto">
+                <a href={`mailto:${CONTACT.email}`}>
                   <Mail className="mr-2 h-5 w-5 flex-shrink-0" />
                   Napisz
-                </Button>
-              </a>
+                </a>
+              </Button>
             </div>
           </div>
 

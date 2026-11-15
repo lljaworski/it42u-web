@@ -14,7 +14,7 @@ export function CoreServices() {
           </p>
         </div>
 
-        <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
           {SERVICES.map((service) => (
             <Card
               key={service.title}
