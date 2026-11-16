@@ -44,7 +44,17 @@ h1, h2 { hyphens: manual; -webkit-hyphens: manual; }
 @media (min-width: 1024px) { .hero--split h1 { font-size: clamp(44px, 3.9vw, 56px); } }
 .hero__media .panel { height: 100%; min-height: 240px; }
 #uslugi .panel { --p-h: 300px; }
-@media (max-width: 639px) { #uslugi .panel { --p-h: 150px; } #wspolpraca .panel { --p-h: 200px; } }
+@media (max-width: 639px) {
+  #uslugi .panel { --p-h: 260px; }
+  #wspolpraca .panel { --p-h: 280px; }
+  #uslugi .card, #wspolpraca .card { margin-bottom: var(--s-6); }
+  #uslugi .section-head, #agent .grid:first-child, #realizacje .section-head { margin-bottom: var(--s-5); }
+  .stats-row { margin-top: var(--s-6); grid-template-columns: 1fr 1fr; }
+  #wspolpraca .grid + .grid { margin-top: var(--s-8) !important; }
+  #realizacje .rows > li { grid-template-columns: minmax(0, 1fr); padding-block: var(--s-5); }
+  #realizacje .rows__value { grid-column: 1; grid-row: auto; text-align: left; white-space: normal; max-width: none; color: var(--muted); font-size: var(--t-small, 14px); }
+  #realizacje .tech-row { margin-top: var(--s-6); }
+}
 #wspolpraca .panel { --p-h: 280px; }
 .stats-row { display: grid; grid-template-columns: 1fr; gap: var(--s-5); align-content: start; }
 #realizacje .panel { --p-h: 190px; margin-bottom: var(--s-7); background: var(--p-surface); }

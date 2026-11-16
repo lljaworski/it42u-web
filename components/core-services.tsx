@@ -111,7 +111,7 @@ export function CoreServices() {
               <h3>{automation.title}</h3>
               <p>{automation.description}</p>
               <div className="panel">
-                <div className="dg" data-diagram={JSON.stringify(LANES)} data-dg-still=""></div>
+                <div className="dg" data-diagram={JSON.stringify(LANES)}></div>
               </div>
             </article>
           </div>
